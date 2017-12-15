@@ -1,0 +1,15 @@
+*{
+    background: DarkCyan;
+}
+h1{
+    text-align: center;
+    color: LightCoral;
+    font-family: 'Arimo', sans-serif;
+    
+}
+p{
+    text-align: center;
+}
+#muy-fuego{
+    height: 10px;
+}
