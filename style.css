@@ -1,9 +1,9 @@
 *{
-    background: DarkCyan;
+    background: red;
 }
 h1{
     text-align: center;
-    color: LightCoral;
+    color: Blacl;
     font-family: "Russo+One", sans-serif;
     
 }
@@ -18,6 +18,7 @@ h1{
 }
 p{
     text-align: center;
+    color: white;
 }
 
 .cosmic-spinner{
@@ -42,4 +43,5 @@ p{
 
 .blue-button:hover {
     background: red;
+    color: white;
 }
