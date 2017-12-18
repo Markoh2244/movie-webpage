@@ -29,3 +29,17 @@ p{
     top: 45px;
     left: 3px;
 }
+.blue-button {
+    border-radius: 28px;
+    font-family: Arial;
+    color: black;
+    font-size: 25px;
+    background: blue;
+    padding: 10px;
+    margin: 20px;
+    height: 50px;
+}
+
+.blue-button:hover {
+    background: red;
+}
