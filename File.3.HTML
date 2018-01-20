@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title> Animation</title>
+  <style>
+    .muyfuego {
+    
+    visibility: hidden;
+    position: relative;
+    background: gray;
+   animation-name: muyfuego;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    }
+
+    @keyframes muyfuego {
+      0% {
+         opacity:100%;
+        visibility: visible;
+        left: 0px;
+        top: 0px
+      }
+      100% {
+        left: -2000px;
+        top: 0px;
+        opacity:0%;
+        
+      }
+    }
+    *{
+    background: red;
+}
+h1{
+    text-align: center;
+    color: Blac;
+    font-family: "Russo+One", sans-serif;
+    
+}
+
+#muyfuego{
+    height: 45px;
+    width: 45px;
+    position: absolute;
+    top: 45px;
+    right: 1px;
+    float: right;
+}
+p{
+    text-align: center;
+    color: white;
+}
+
+.cosmic-spinner{
+    height: 45px;
+    width: 45px;
+    margin: 5px;
+    padding: 5px;
+    position: absolute;
+    top: 45px;
+    left: 3px;
+}
+.blue-button {
+    border-radius: 28px;
+    font-family: Bungee;
+    color: black;
+    font-size: 25px;
+    background: blue;
+    padding: 10px;
+    margin: 20px;
+    height: 50px;
+}
+
+.blue-button:hover {
+    background: red;
+    color: white;
+}
+
+
+  </style>
+</head>
+
+<body>
+
+
+  <img src="mapofearth.jpeg" alt="map" class="muyfuego">
+
+
+
+</body>
+
+</html>

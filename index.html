@@ -5,14 +5,164 @@ fidget-spinner.jpg: https://www.banggood.com/ECUBEE-EDC-Fidget-Spinner-Hand-Spin
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>title</title>
-  <link rel="stylesheet" href="style.css" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Bungee|Russo+One" rel="stylesheet">
+  <style>
+  *{
+    background:gray;
+
+
+}
+/*Here we set the specifications we want for the heading*/
+h1{
+     background:linear-gradient(white,gray);
+    text-align: center;
+    color: Black;
+    font-family: "Russo+One", sans-serif;
+        box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0), 0 6px 20px 0 rgba(0, 0, 0, 0);
+}
+
+/*This sets the specification for the picture on the right*/
+#muyfuego{
+    height: 45px;
+    width: 45px;
+    position: absolute;
+    top: 45px;
+    right: 1px;
+    float: right;
+}
+p{
+    text-align: center;
+    color: white;
+}/*This sets the specification for the picture on the left*/
+
+.cosmic-spinner{
+    height: 45px;
+    width:45px;
+    margin: 5px;
+    padding: 5px;
+    position: absolute;
+    top: 45px;
+    left: 3px;
+}
+.blue-button {
+    z-index: -1;
+    border-radius: 28px;
+    font-family: Bungee;
+    color: black;
+    font-size: 25px;
+    background: blue;
+    padding: 10px;
+    margin: 20px;
+    height: 50px;
+     box-shadow: 0 5px 9px 0 rgba(100, 0, 100, 0), 0 6px 20px 0 rgba(100, 100, 0, 0);
+}
+/*This tells the computer what to do when you hover over the button*/
+.blue-button:hover {
+    background: red;
+    color: white;
+   
+}
+/*This tells the computer to move the projection*/
+.pizza {
+ 
+    background:cover;
+    visibility: hidden;
+    position: relative;
+    background: gray;
+   animation-name: pizza;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    }
+/*This is the instructions for how the projection should move*/
+    @keyframes pizza {
+      0% {
+         opacity:100%;
+        visibility: visible;
+        left: 0px;
+        top: 0px
+      }
+      100% {
+        left: -2000px;
+        top: 0px;
+        opacity:0%;
+        
+      }
+    }
+    /*This tells the fidget spinner to spin*/
+    .cookie{
+     height: 90px;
+    width: 90px;
+    margin: 5px;
+    padding: 5px;
+    position: absolute;
+    top: 400px;
+    left: 30px;
+     animation-name: cookie;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    transition: width 2s, height 4s;
+
+    }
+ 
+    /*This is the instruction for the animation*/
+      @keyframes cookie{
+      
+     100% { transform: rotate(1800deg) }
+    }
+        .weather{
+     height: 90px;
+    width: 90px;
+    margin: 5px;
+    padding: 5px;
+    position: absolute;
+    top: 400px;
+    left: 300px;
+     animation-name: cookie;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    transition: width 2s, height 4s;
+
+    }
+ /*This is the code for the left fidget spinner*/
+    
+      @keyframes weather{
+      
+     100% { transform: rotate(1800deg) }
+    }
+    .weather {
+    width: 100px;
+    height: 100px;
+    opacity:1;
+     transform: rotate(1800deg);
+    background: gray;
+    -webkit-transition: width 2s, height 4s background 4s transform; /* For Safari 3.1 to 6.0 */
+    transition: width 2s, height 4s;
+}
+/*This tells the fidget spinner what to do when you hover over it*/
+.weather:hover {
+    width: 300px;
+    height: 300px;
+    background:white;
+     transform: rotate(5000deg)
+    
+}
+  </style>
   </head>
   <body>
   <h1>The Journey of the Fidget Spinners
-  
+  <!--This is the code for the text-->
 </h1>
  <div id="1st-intro">
   <p> In a world full of fidget spinners yet to be spun, 2 men will embark on a journey to spin every fidget spinner in the world
@@ -23,6 +173,7 @@ fidget-spinner.jpg: https://www.banggood.com/ECUBEE-EDC-Fidget-Spinner-Hand-Spin
   <p>Our story begins with 2 student back in 09’, Omark and Dahme, who are originally from Kansas. After the markets crashed they saw something others didn't. They knew bit-coin was going to explode.F ive years later it did, and they pulled their money out before the bubble burst. However, as this was happening they were not doing so well in <span class="ap.chem">AP chemistry</span>, so they devised a plan. They asked their teacher for an <span class="ap.chem">extra 20 points</span> every test if they could spin every fidget spinner in the world. The teacher agreed, thinking they could never do it. So the two set out on a mission to spin every fidget spinner in the world. Join them on their exit journey.
   </div>
 </p>
+<!--This tells the computer where to pull the code-->
  <img src="pexels-photo-256137.jpeg" id="muyfuego">
 
  <img src=fidget-spinner.jpg class="cosmic-spinner"
@@ -35,5 +186,10 @@ Sign up <input type="email" name="email"><br>
   <source src="audio.mp3" type="audio/mpeg">
 Your browser does not support the audio element.
 </audio>
+<img src="pink.png" alt="map" class="cookie">
+<img src="pink.1.png" alt="map" class="weather">
+<img src="mapofearth.jpeg" alt="map" class="pizza">
+
+
   </body>
 </html>
